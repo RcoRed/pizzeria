@@ -15,9 +15,6 @@ header{
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
-        div{
-
-        }
     }
     img{
         height: calc($header-height - ($header-padding * 2));
