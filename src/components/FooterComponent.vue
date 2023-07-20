@@ -1,6 +1,6 @@
 <template>
     <footer>
-        <a href="#title"><img src="../assets/img/logo.png" alt="pizza time logo" /></a>
+        <a href="#"><img src="../assets/img/logo.png" alt="pizza time logo" /></a>
         <div class="contact">
             <h5>Come trovarci:</h5>
             <ul>
@@ -18,7 +18,7 @@
             </ul>
         </div>
         <div class="menu">
-            <a href="#title">Torna su</a>
+            <a href="#">Torna su</a>
         </div>
     </footer>
   </template>
