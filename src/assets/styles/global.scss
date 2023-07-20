@@ -5,33 +5,39 @@
     padding: 0;
     font-family: sans-serif;
     font-size: 15px;
-    a{
-        color: $my-orange;
-        text-decoration: none;
-        border-bottom: 1px $my-orange solid;
-        font-weight: bold;
-        &:hover{
-            color: $my-lightorange;
-            border-bottom: 1px $my-lightorange solid;
+    #app{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 50px;
+        background: $my-black url("/src/assets/img/sfondo.jpg") repeat;
+        a{
+            color: $my-orange;
+            text-decoration: none;
+            font-weight: bold;
+            &:hover{
+                color: $my-lightorange;
+            }
+        }
+        h1{
+            text-shadow: 1px 1px 2px $my-black, 3px 3px 0px $my-white;
+            font-size: 5rem;
+            color: $my-orange;
+        }
+        h2{
+            text-shadow: 1px 1px 2px $my-black, 3px 3px 0px $my-orange;
+            font-size: 3rem;
+            color: $my-white;
+        }
+        h3{
+            text-shadow: 1px 1px 2px $my-black;
+            font-size: 2.5rem;
+            color: $my-orange;
+        }
+        h4{
+            font-size: 2rem;
+            color: $my-black;
         }
     }
-    h1{
-        text-shadow: 1px 1px 2px $my-black, 2px 1px 0px $my-white;
-        font-size: xx-large;
-        color: $my-orange;
-    }
-    h2{
-        text-shadow: 1px 1px 2px $my-black, 3px 1px 0px $my-orange;
-        font-size: larger;
-        color: $my-white;
-    }
-    h3{
-        text-shadow: 1px 1px 2px $my-black;
-        font-size: large;
-        color: $my-orange;
-    }
-    h4{
-        font-size: medium;
-        color: $my-black;
-    }
+
 }

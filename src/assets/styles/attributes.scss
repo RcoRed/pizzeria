@@ -2,4 +2,39 @@ $my-black: rgb(23, 21, 21);
 $my-orange: rgb(218, 124, 0);
 $my-lightorange: rgb(255, 202, 104);
 $my-white: rgb(232, 230, 228);
-$header-height: 50px
+$header-height: 100px;
+$header-padding: 10px;
+$max-with: 70vw;
+$footer-height: 150px;
+$footer-padding: 10px;
+
+@mixin card-style-white-orange{
+    background-color:$my-white;
+    box-shadow: 10px 10px $my-orange;
+    border-radius: 10px;
+};
+@mixin input-style-white-orange{
+    border-radius: 5px;
+    border: 2px $my-orange solid;
+    background-color: white;
+    padding: 5px;
+    &:focus{
+        outline: 0px;
+        border: 2px $my-lightorange solid;
+    }
+}
+@mixin my-button{
+    border-radius: 10px;
+    border: 2px $my-orange solid;
+    padding: 10px;
+    background-color: $my-lightorange;
+
+    font-weight: bold;
+    &:hover{
+        outline: 0px;
+        background-color: white;
+    }
+    &:active{
+        background-color: $my-lightorange;
+    }
+}

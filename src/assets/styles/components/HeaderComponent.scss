@@ -5,16 +5,22 @@ header{
     position: fixed;
     top: 0px;
     box-sizing: border-box;
-    padding: 5px;
+    padding: $header-padding;
     width: 100%;
     max-height: $header-height;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
     background-color: $my-black;
     box-shadow: 0px 7px 15px -5px $my-orange;
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        div{
+
+        }
+    }
     img{
-        height: 40px;
+        height: calc($header-height - ($header-padding * 2));
     }
 }
 

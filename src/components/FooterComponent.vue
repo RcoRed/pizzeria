@@ -1,22 +1,26 @@
 <template>
-    <form>
-        <div>
-            <input type="text" id="name" name="name" placeholder="Nome">
-            <input type="text" id="surname" name="surname" placeholder="Cognome">
+    <footer>
+        <a href="#title"><img src="../assets/img/logo.png" alt="pizza time logo" /></a>
+        <div class="contact">
+            <h5>Come trovarci:</h5>
+            <ul>
+                <li>Indirizzo: <a href="#">Via Dwayne Johnson 13</a></li>
+                <li>Cell.: 12345678912</li>
+                <li>Email: <a href="mailto:napoli.love@gmail.com">napoli.love@gmail.com</a></li>
+            </ul>
         </div>
-        <div>
-            <input type="email" id="email" name="email" placeholder="email@email.email">
-            <input type="tel" id="phone" name="phone" placeholder="Numero di contatto">
-            <input type="text" id="address" name="address" placeholder="Indirizzo">
+        <div class="social">
+            <h5>Seguici su:</h5>
+            <ul>
+                <li><i class="fa fa-instagram"></i> Instagram: <a href="https://www.instagram.com/cristiano/" target="_blank">@ronaldo</a></li>
+                <li><i class="fa fa-twitter"></i> Twitter: <a href="https://twitter.com/elonmusk" target="_blank">@elonmusk</a></li>
+                <li><i class="fa fa-facebook"></i> Facebook: <a href="https://www.facebook.com/zuck/?locale=it_IT" target="_blank">Mark Zuckerberg</a></li>
+            </ul>
         </div>
-        <div>
-            <textarea name="order" id="order" placeholder="Inserisci qui il tuo ordine!"></textarea>
+        <div class="menu">
+            <a href="#title">Torna su</a>
         </div>
-        <div>
-            <button type="submit">Ordina ora!</button>
-            <button type="reset">cancella</button>
-        </div>
-    </form>
+    </footer>
   </template>
 
   <script>

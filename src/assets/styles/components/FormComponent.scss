@@ -1,0 +1,48 @@
+@import "/src/assets/styles/attributes.scss";
+
+.order-container{
+    @include card-style-white-orange;
+    width: fit-content;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    row-gap: 20px;
+    padding: 20px;
+    //non so perchè ma &:nth-child(){} non funziona...
+    .nominative, .contact{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .address{
+        display: flex;
+        flex-direction: column;
+        input{
+            align-self: stretch;
+        }
+    }
+    .order{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        textarea{
+            width: 70%;
+            height: 70px;
+        }
+    }
+    .form-button{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        button{
+           @include my-button;
+        }
+    }
+    input{
+        @include input-style-white-orange;
+    }
+    textarea{
+        @include input-style-white-orange;
+    }
+}

@@ -1,37 +1,36 @@
 @import "/src/assets/styles/attributes.scss";
 
 .card{
+    @include card-style-white-orange;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    background-color:$my-white;
-    width: 500px;
-    height: 200px;
-    border-radius: 10px;
-    box-shadow: 7px 7px 0px 0px $my-orange;
+    width: 70%;
+    aspect-ratio: 16 / 9;
+    max-width: 900px;
     transition: 0.2s;
     overflow: hidden;
     &:hover{
-        box-shadow: 4px 4px 0px $my-orange, inset 1px 1px 3px #000000;
+        box-shadow: 5px 5px $my-orange, inset 1px 1px 3px #000000;
         cursor: pointer;
         img{
             left: -20%;
         }
     }
     img{
+        aspect-ratio: 1 / 1;
         transition: 0.2s;
         position: relative;
         left: -25%;
     }
-
-
     .info-pizza{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        align-items: end;
+        align-items: start;
         p{
             align-self: flex-end;
+            font-size: 2rem;
+            font-weight: bold;
         }
         .ingredients{
             h4{

@@ -1,0 +1,30 @@
+@import "/src/assets/styles/attributes.scss";
+
+footer{
+    box-sizing: border-box;
+    width: 100%;
+    height: $footer-height;
+    padding: $footer-padding;
+    background-color: $my-black;
+    color: $my-white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    img{
+        height: calc($footer-height - ($footer-padding * 2));
+    }
+    .contact{
+        ul{
+            padding-left: 20px;
+        }
+    }
+    .social{
+        ul{
+            list-style: none;
+        }
+    }
+    li{
+        padding-top: 7px;
+    }
+}
