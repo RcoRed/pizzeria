@@ -11,6 +11,11 @@ footer{
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    @media screen and (max-width: 900px) {
+        flex-direction: column-reverse;
+        height: fit-content;
+        row-gap: 20px;
+    }
     img{
         height: calc($footer-height - ($footer-padding * 2));
     }

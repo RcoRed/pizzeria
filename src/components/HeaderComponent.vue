@@ -1,6 +1,7 @@
 <template>
   <header>
     <nav>
+      <a id="hamburger-menu" href="#"><i class="fa fa-bars"></i></a>
       <a href="#">Home</a>
       <a href="#">About us</a>
       <a id="a-img" href="#title"><img src="../assets/img/logo.png" alt="pizza time logo" /></a>

@@ -10,16 +10,20 @@
     row-gap: 20px;
     padding: 20px;
     @media screen and (max-width: 900px) {
-        width: 600px;
+        width: 500px;
     }
     @media screen and (max-width: 576px) {
-        width: 400px;
+        width: 250px;
     }
     //non so perchè ma &:nth-child(){} non funziona...
     .nominative, .contact{
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+        @media screen and (max-width: 900px) {
+            flex-direction: column;
+            row-gap: 20px;
+        }
     }
     .address{
         display: flex;

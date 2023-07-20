@@ -1,6 +1,10 @@
 @import "/src/assets/styles/attributes.scss";
 
 header{
+    #hamburger-menu{
+        position: absolute;
+        visibility: hidden;
+    }
     z-index: 2; //perchè se no l'immagine della pizza (relative), nello scorrere va sopra l'header e non saprei in quale altro modo risolverlo
     position: fixed;
     top: 0px;
@@ -15,14 +19,25 @@ header{
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
+        @media screen and (max-width: 768px){
+            a{
+                position: absolute;
+                visibility: hidden;
+            }
+            #a-img{
+                position: unset;
+                order: 5;
+                visibility: visible;
+            }
+            #hamburger-menu{
+                position: unset;
+                visibility: visible;
+            }
+        }
     }
     img{
         height: calc($header-height - ($header-padding * 2));
     }
-    @media screen and (max-width: 992px){
-        #a-img{
-            order: 5;
-        }
-    }
+
 }
 

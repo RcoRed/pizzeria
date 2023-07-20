@@ -12,7 +12,7 @@
         width: 500px;
     }
     @media screen and (max-width: 576px) {
-        width: 400px;
+        width: 250px;
     }
     &:hover{
         box-shadow: 5px 5px $my-orange, inset 1px 1px 3px #000000;
@@ -36,6 +36,9 @@
             align-self: flex-end;
             font-size: 2rem;
             font-weight: bold;
+            @media screen and (max-width: 900px) {
+                font-size: 1rem;
+            }
         }
         .ingredients{
             h4{
@@ -43,9 +46,6 @@
             }
             ul{
                 padding-left: 15px;
-                li{
-                    font-size: 0.7rem;
-                }
             }
         }
     }
