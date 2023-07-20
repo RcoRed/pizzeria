@@ -38,6 +38,48 @@
             font-size: 2rem;
             color: $my-black;
         }
+        @media screen and (max-width: 900px) {
+            h1{
+                text-shadow: 1px 1px 2px $my-black, 3px 3px 0px $my-white;
+                font-size: 3rem;
+                color: $my-orange;
+            }
+            h2{
+                text-shadow: 1px 1px 2px $my-black, 3px 3px 0px $my-orange;
+                font-size: 2.5rem;
+                color: $my-white;
+            }
+            h3{
+                text-shadow: 1px 1px 2px $my-black;
+                font-size: 2rem;
+                color: $my-orange;
+            }
+            h4{
+                font-size: 1.5rem;
+                color: $my-black;
+            }
+        }
+        @media screen and (max-width: 576px) {
+            h1{
+                text-shadow: 1px 1px 2px $my-black, 3px 3px 0px $my-white;
+                font-size: 2.5rem;
+                color: $my-orange;
+            }
+            h2{
+                text-shadow: 1px 1px 2px $my-black, 3px 3px 0px $my-orange;
+                font-size: 2rem;
+                color: $my-white;
+            }
+            h3{
+                text-shadow: 1px 1px 2px $my-black;
+                font-size: 1.5rem;
+                color: $my-orange;
+            }
+            h4{
+                font-size: 1.2rem;
+                color: $my-black;
+            }
+        }
     }
 
 }

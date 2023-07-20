@@ -4,11 +4,16 @@
     @include card-style-white-orange;
     display: flex;
     flex-direction: row;
-    width: 70%;
+    width: 700px;
     aspect-ratio: 16 / 9;
-    max-width: 900px;
     transition: 0.2s;
     overflow: hidden;
+    @media screen and (max-width: 900px) {
+        width: 500px;
+    }
+    @media screen and (max-width: 576px) {
+        width: 400px;
+    }
     &:hover{
         box-shadow: 5px 5px $my-orange, inset 1px 1px 3px #000000;
         cursor: pointer;
@@ -43,6 +48,5 @@
                 }
             }
         }
-
     }
 }

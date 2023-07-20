@@ -9,6 +9,12 @@
     width: 700px;
     row-gap: 20px;
     padding: 20px;
+    @media screen and (max-width: 900px) {
+        width: 600px;
+    }
+    @media screen and (max-width: 576px) {
+        width: 400px;
+    }
     //non so perchè ma &:nth-child(){} non funziona...
     .nominative, .contact{
         display: flex;

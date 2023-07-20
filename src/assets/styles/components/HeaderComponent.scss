@@ -19,5 +19,10 @@ header{
     img{
         height: calc($header-height - ($header-padding * 2));
     }
+    @media screen and (max-width: 992px){
+        #a-img{
+            order: 5;
+        }
+    }
 }
 
