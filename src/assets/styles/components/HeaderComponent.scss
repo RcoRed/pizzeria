@@ -2,8 +2,7 @@
 
 header{
     #hamburger-menu{
-        position: absolute;
-        visibility: hidden;
+        display: none;
     }
     z-index: 2; //perchè se no l'immagine della pizza (relative), nello scorrere va sopra l'header e non saprei in quale altro modo risolverlo
     position: fixed;
@@ -21,17 +20,13 @@ header{
         align-items: center;
         @media screen and (max-width: 768px){
             a{
-                position: absolute;
-                visibility: hidden;
+                display: none;
             }
             #a-img{
-                position: unset;
-                order: 5;
-                visibility: visible;
+                display: block;
             }
             #hamburger-menu{
-                position: unset;
-                visibility: visible;
+                display: block;
             }
         }
     }
